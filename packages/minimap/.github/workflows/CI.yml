@@ -1,0 +1,96 @@
+name: CI
+on:
+  - push
+  - pull_request
+
+jobs:
+  Test:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    name: ${{ matrix.os }} - Atom ${{ matrix.atom_channel }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+          - macos-latest
+          - windows-latest
+        atom_channel: [stable, beta]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v2
+        env:
+          cache-name: node_modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-${{ matrix.atom_channel }}-${{ hashFiles('package-lock.json') }}
+
+      - uses: UziTech/action-setup-atom@v1
+        with:
+          channel: ${{ matrix.atom_channel }}
+      - name: Versions
+        run: apm -v
+
+      - name: Install dependencies
+        run: |
+          apm install --production
+          npm install --only=dev
+
+      - name: Run Ubuntu tests
+        if: ${{ contains(matrix.os, 'ubuntu') }}
+        run: npm run build.test && npm run test
+
+      # One or two of the tests are flaky on Windows/MacOs
+      - name: Run Windows and MacOS tests
+        if: ${{ !contains(matrix.os, 'ubuntu') }}
+        continue-on-error: true
+        run: npm run build.test && npm run test
+
+  Lint:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "12.x"
+      - name: Install NPM dependencies
+        run: |
+          npm install --ignore-scripts
+      - name: Lint ✨
+        run: npm run test:lint
+
+  Release:
+    needs: [Test, Lint]
+    if: github.ref == 'refs/heads/master' &&
+      github.event.repository.fork == false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: UziTech/action-setup-atom@v1
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "12.x"
+
+      - name: NPM install
+        run: npm install
+
+      - name: Build and Commit
+        run: npm run build-commit
+
+      - name: Release 🎉
+        uses: cycjimmy/semantic-release-action@v2
+        with:
+          extends: |
+            @semantic-release/apm-config
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ATOM_ACCESS_TOKEN: ${{ secrets.ATOM_ACCESS_TOKEN  }}
+  Skip:
+    if: contains(github.event.head_commit.message, '[skip ci]')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Skip CI 🚫
+        run: echo skip ci

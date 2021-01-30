@@ -1,0 +1,56 @@
+{
+  "_from": "https://www.atom.io/api/packages/custom-app-icon/versions/0.2.4/tarball",
+  "_id": "custom-app-icon@0.2.4",
+  "_inBundle": false,
+  "_integrity": "sha512-tGWtBphn0khFUW3OKDU8JRjRSnTjV69UPcQgixJYivBOEjFz5yxOyuhc9WYkALSAYwtZkyYFCFwugERFtm0Wwg==",
+  "_location": "/custom-app-icon",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/custom-app-icon/versions/0.2.4/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/custom-app-icon/versions/0.2.4/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/custom-app-icon/versions/0.2.4/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/custom-app-icon/versions/0.2.4/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/custom-app-icon/versions/0.2.4/tarball",
+  "_shasum": "088838e9fd55553e7c974153594b016f8257e811",
+  "_spec": "https://www.atom.io/api/packages/custom-app-icon/versions/0.2.4/tarball",
+  "_where": "/private/var/folders/rn/wcqtg18j4zj___ml5tl4zd0c0000gp/T/apm-install-dir-2021030-1176-1ufb06m.3vqb",
+  "author": {
+    "name": "Daniel Bayley",
+    "email": "daniel.bayley@me.com",
+    "url": "https://github.com/danielbayley"
+  },
+  "bugs": {
+    "url": "https://github.com/danielbayley/atom-custom-app-icon/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Replace the Atom app icon with any custom .icns file.",
+  "engines": {
+    "atom": "*"
+  },
+  "homepage": "https://atom.io/packages/custom-app-icon",
+  "keywords": [
+    "app",
+    "icon",
+    "icns",
+    "ui",
+    "theme"
+  ],
+  "license": "MIT",
+  "name": "custom-app-icon",
+  "os": [
+    "darwin"
+  ],
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielbayley/atom-custom-app-icon.git"
+  },
+  "version": "0.2.4"
+}

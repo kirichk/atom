@@ -1,0 +1,41 @@
+{
+  "_from": "https://www.atom.io/api/packages/django-templates/versions/0.5.0/tarball",
+  "_id": "django-templates@0.5.0",
+  "_inBundle": false,
+  "_integrity": "sha512-qJVb5/PrJl0xOuXyo/XO9wx7dlYyXXcPyya87+V/aE3ysyUY8yXSBXVKB7F2IHvInNtDqceO0rLCb1+4qg7Y3w==",
+  "_location": "/django-templates",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/django-templates/versions/0.5.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/django-templates/versions/0.5.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/django-templates/versions/0.5.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/django-templates/versions/0.5.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/django-templates/versions/0.5.0/tarball",
+  "_shasum": "dabedaf73ea26c6e4830470cdae2187094006aa8",
+  "_spec": "https://www.atom.io/api/packages/django-templates/versions/0.5.0/tarball",
+  "_where": "/tmp/apm-install-dir-12047-14226-1pxli7u.udyk",
+  "bugs": {
+    "url": "https://github.com/benjohnson/atom-django-templates/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Atom support for Django templates.",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/benjohnson/atom-django-templates#readme",
+  "license": "MIT",
+  "main": "django-templates.coffee",
+  "name": "django-templates",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjohnson/atom-django-templates.git"
+  },
+  "version": "0.5.0"
+}

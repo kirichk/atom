@@ -1,0 +1,108 @@
+{
+  "_from": "https://www.atom.io/api/packages/magicpython/versions/1.1.1/tarball",
+  "_id": "MagicPython@1.1.1",
+  "_inBundle": false,
+  "_integrity": "sha512-vmZywRVckt8TiEdOOhTRMVZGGHfVVhCIyQFJCDL0GjJ74XAuxXyiYMl18t4RW3LZ9R5wU7YDikQItFhb0ahziA==",
+  "_location": "/MagicPython",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/magicpython/versions/1.1.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/magicpython/versions/1.1.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/magicpython/versions/1.1.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/magicpython/versions/1.1.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/magicpython/versions/1.1.1/tarball",
+  "_shasum": "96bac98367be9e55344a54baa72f9605a8543489",
+  "_spec": "https://www.atom.io/api/packages/magicpython/versions/1.1.1/tarball",
+  "_where": "/private/var/folders/rn/wcqtg18j4zj___ml5tl4zd0c0000gp/T/apm-install-dir-2021030-2616-1fclgep.5cgp",
+  "bugs": {
+    "url": "https://github.com/MagicStack/MagicPython/issues"
+  },
+  "bundleDependencies": false,
+  "categories": [
+    "Languages"
+  ],
+  "contributes": {
+    "//": [
+      "This section is for VSCode.",
+      "NOTE: remember to update grammar/src/MagicPython.syntax.yaml, too."
+    ],
+    "languages": [
+      {
+        "id": "python",
+        "aliases": [
+          "MagicPython",
+          "python"
+        ],
+        "extensions": [
+          ".py",
+          ".py3",
+          ".rpy",
+          ".pyw",
+          ".cpy",
+          ".pyi",
+          ".SConstruct",
+          ".Sconstruct",
+          ".sconstruct",
+          ".SConscript",
+          ".gyp",
+          ".gypi",
+          ".wsgi"
+        ]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "python",
+        "scopeName": "source.python",
+        "path": "./grammars/MagicPython.tmLanguage"
+      }
+    ]
+  },
+  "contributors": [
+    {
+      "name": "Victor Petrovykh",
+      "email": "victor@magic.io"
+    },
+    {
+      "name": "Yury Selivanov",
+      "email": "yury@magic.io"
+    }
+  ],
+  "deprecated": false,
+  "description": "Syntax highlighter for cutting edge Python.",
+  "devDependencies": {
+    "oniguruma": "^7.0.0",
+    "syntaxdev": "0.0.16"
+  },
+  "engines": {
+    "atom": "*",
+    "node": "*",
+    "vscode": "*"
+  },
+  "galleryBanner": {
+    "color": "#2c2c2c",
+    "theme": "dark"
+  },
+  "homepage": "https://github.com/MagicStack/MagicPython#readme",
+  "icon": "icon.png",
+  "keywords": [
+    "python",
+    "highlighter",
+    "syntax",
+    "python3"
+  ],
+  "license": "MIT",
+  "name": "MagicPython",
+  "publisher": "magicstack",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MagicStack/MagicPython.git"
+  },
+  "version": "1.1.1"
+}

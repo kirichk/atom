@@ -1,0 +1,44 @@
+"*":
+  core:
+    customFileTypes:
+      "source.python": [
+        "py"
+      ]
+    disabledPackages: [
+      "intentions"
+      "MagicPython"
+      "project-manager"
+      "linter-flake8"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "one-dark-ui"
+      "monokai-seti"
+    ]
+    uriHandlerRegistration: "always"
+    useTreeSitterParsers: false
+  editor:
+    fontSize: 11
+    showIndentGuide: true
+  "exception-reporting":
+    userId: "b8525c97-9cd4-4c86-8481-53ae6268785a"
+  "ide-python":
+    pylsPlugins:
+      flake8:
+        enabled: true
+      pycodestyle:
+        enabled: false
+      pylint:
+        enabled: true
+  kite:
+    showWelcomeNotificationOnStartup: false
+  "linter-ui-default":
+    panelHeight: 222
+  minimap: {}
+  "project-manager":
+    includeGitRepositories: true
+  welcome:
+    showOnStartup: false
+".django.python.source":
+  editor:
+    autoIndent: true

@@ -1,0 +1,64 @@
+{
+  "_from": "https://www.atom.io/api/packages/refactor/versions/0.11.5/tarball",
+  "_id": "refactor@0.11.5",
+  "_inBundle": false,
+  "_integrity": "sha512-iSUA6h9JItwD+qAtc4W0/oPSiTAJCYAaTiu1A2IptKo4pVB34aprSomudc9ETtA3E6gLjB9GBCvQzYAaZ5aRuQ==",
+  "_location": "/refactor",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/refactor/versions/0.11.5/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/refactor/versions/0.11.5/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/refactor/versions/0.11.5/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/refactor/versions/0.11.5/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/refactor/versions/0.11.5/tarball",
+  "_shasum": "c893fa923560981f397665c72e657fa20d527310",
+  "_spec": "https://www.atom.io/api/packages/refactor/versions/0.11.5/tarball",
+  "_where": "C:\\Users\\kiric\\AppData\\Local\\Temp\\apm-install-dir-202094-24260-kjswt6.hjw2",
+  "auther": {
+    "name": "Daisuke Mino",
+    "url": "http://dsk.mn"
+  },
+  "bugs": {
+    "url": "https://github.com/hax/refactor/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "HE Shi-Jun",
+      "email": "johnhax@gmail.com",
+      "url": "hax"
+    }
+  ],
+  "dependencies": {
+    "debug": "^2.0.0",
+    "semver": "^5.3.0"
+  },
+  "deprecated": false,
+  "description": "Refactoring support",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-este-watch": "^0.1",
+    "grunt-notify": "^0.4"
+  },
+  "engines": {
+    "atom": ">=1.0.0"
+  },
+  "homepage": "https://github.com/hax/refactor#readme",
+  "license": "MIT",
+  "main": "./lib/refactor",
+  "name": "refactor",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hax/refactor.git"
+  },
+  "scripts": {
+    "test": "apm test"
+  },
+  "version": "0.11.5"
+}

@@ -1,0 +1,76 @@
+{
+  "_from": "https://www.atom.io/api/packages/atom-ide-signature-help/versions/0.13.2/tarball",
+  "_id": "atom-ide-signature-help@0.13.2",
+  "_inBundle": false,
+  "_integrity": "sha512-NMkXVWlF5zbA/xeEC1o2zlwjL5IOZZwanm/IGk3EnQe8S0lWvhJE8+MKlpOoOrmew+oPDaA6VQrjCNyoIyA5pQ==",
+  "_location": "/atom-ide-signature-help",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/atom-ide-signature-help/versions/0.13.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/atom-ide-signature-help/versions/0.13.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/atom-ide-signature-help/versions/0.13.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/atom-ide-signature-help/versions/0.13.2/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/atom-ide-signature-help/versions/0.13.2/tarball",
+  "_shasum": "2e0fd92eb2a24a95459abae420661677272db411",
+  "_spec": "https://www.atom.io/api/packages/atom-ide-signature-help/versions/0.13.2/tarball",
+  "_where": "/private/var/folders/rn/wcqtg18j4zj___ml5tl4zd0c0000gp/T/apm-install-dir-2021030-2194-1p0hxnq.t4oa",
+  "activationHooks": [
+    "core:loaded-shell-environment"
+  ],
+  "bugs": {
+    "url": "https://github.com/atom-ide-community/atom-ide-signature-help/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "atom-ide-base": "^2.1.1",
+    "atom-package-deps": "^6.0.0"
+  },
+  "deprecated": false,
+  "description": "A replacement of the SignatureHelp functionality from the original Atom-IDE / Nuclide package developed by Facebook.",
+  "devDependencies": {
+    "@types/atom": "^1.40.5",
+    "@types/node": "^14.14.16",
+    "atom-languageclient": "^1.0.5",
+    "build-commit": "^0.1.1",
+    "npm-check-updates": "^10.2.5",
+    "prettier": "^2.2.1"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/atom-ide-community/atom-ide-signature-help#readme",
+  "keywords": [
+    "atom-package",
+    "atom-ide",
+    "signature-help"
+  ],
+  "license": "MIT",
+  "main": "./lib/main.js",
+  "name": "atom-ide-signature-help",
+  "package-deps": [
+    "atom-ide-markdown-service",
+    "busy-signal"
+  ],
+  "providedServices": {
+    "signature-help": {
+      "versions": {
+        "0.1.0": "provideSignatureHelp"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom-ide-community/atom-ide-signature-help.git"
+  },
+  "scripts": {
+    "bump": "ncu -u",
+    "format": "prettier --write ."
+  },
+  "version": "0.13.2"
+}

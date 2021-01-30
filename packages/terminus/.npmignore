@@ -1,0 +1,21 @@
+# lockfiles
+yarn.lock
+
+# temp crap
+tmp/
+*.tmp
+*.bak
+
+# Log crap
+*.stackdump
+*.log
+
+# Build
+node_modules/
+
+# Windows crap
+Thumbs.db
+Desktop.ini
+
+# macOS crap
+.DS_Store

@@ -1,0 +1,56 @@
+{
+  "_from": "https://www.atom.io/api/packages/unleash-django/versions/1.3.2/tarball",
+  "_id": "unleash-django@1.3.2",
+  "_inBundle": false,
+  "_integrity": "sha512-bPxZLfO7VJcRe9X1KQ+VjlNQG7KHt+immTeplRN2vMyCD4JNkDoa0Csdh1Q1u9o+fM8/+l7w1FjuiNhTk5ieoQ==",
+  "_location": "/unleash-django",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/unleash-django/versions/1.3.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/unleash-django/versions/1.3.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/unleash-django/versions/1.3.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/unleash-django/versions/1.3.2/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/unleash-django/versions/1.3.2/tarball",
+  "_shasum": "b5f2bb56209c90f8cb2efaeeb68539c448976282",
+  "_spec": "https://www.atom.io/api/packages/unleash-django/versions/1.3.2/tarball",
+  "_where": "C:\\Users\\Kiric\\AppData\\Local\\Temp\\apm-install-dir-202052-13940-dbfgvo.8ihae",
+  "bugs": {
+    "url": "https://github.com/hectocore/unleash-django/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Atom enhanced support for Django",
+  "engines": {
+    "atom": "*"
+  },
+  "homepage": "https://github.com/hectocore/unleash-django#readme",
+  "keywords": [
+    "Django",
+    "Atom",
+    "Framework",
+    "Template",
+    "Productive",
+    "Language",
+    "Python",
+    "HTML",
+    "Web",
+    "Simply",
+    "Support",
+    "language-django"
+  ],
+  "license": "GPLv3",
+  "main": "./lib/unleash-django",
+  "name": "unleash-django",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hectocore/unleash-django.git"
+  },
+  "version": "1.3.2"
+}

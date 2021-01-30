@@ -1,0 +1,88 @@
+{
+  "_from": "https://www.atom.io/api/packages/atom-ide-hyperclick/versions/1.0.9/tarball",
+  "_id": "atom-ide-hyperclick@1.0.9",
+  "_inBundle": false,
+  "_integrity": "sha512-q9Y31Jugfma1ix6C7p5kPZ3aOGZ6NQFS4nTdA9Rjy9WUSgA5G7C1XQUPGVCA21rA6+1CSCUE/RFTXfDoGWTe1Q==",
+  "_location": "/atom-ide-hyperclick",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/atom-ide-hyperclick/versions/1.0.9/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/atom-ide-hyperclick/versions/1.0.9/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/atom-ide-hyperclick/versions/1.0.9/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/atom-ide-hyperclick/versions/1.0.9/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/atom-ide-hyperclick/versions/1.0.9/tarball",
+  "_shasum": "dedafaf42c93c5ce3507fc077afd97a4b532d820",
+  "_spec": "https://www.atom.io/api/packages/atom-ide-hyperclick/versions/1.0.9/tarball",
+  "_where": "/private/var/folders/rn/wcqtg18j4zj___ml5tl4zd0c0000gp/T/apm-install-dir-2021030-2207-o1csd0.q9uek",
+  "activationHooks": [
+    "core:loaded-shell-environment"
+  ],
+  "atomTestRunner": "./spec/runner",
+  "author": {
+    "name": "Tony Brix",
+    "email": "tony@brix.ninja"
+  },
+  "bugs": {
+    "url": "https://github.com/atom-ide-community/atom-ide-hyperclick/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "hyperclick.provider": {
+      "versions": {
+        "0.0.0": "addLegacyProvider"
+      }
+    },
+    "hyperclick": {
+      "versions": {
+        "0.1.0": "addProvider"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-ide-base": "^2.1.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "rxjs": "^6.6.3"
+  },
+  "deprecated": false,
+  "description": "Hyperclick UI",
+  "devDependencies": {
+    "@types/atom": "^1.40.4",
+    "@types/node": "^14.14.2",
+    "atom-jasmine3-test-runner": "^5.1.5",
+    "eslint": "^7.11.0",
+    "eslint-config-atomic": "^1.5.0",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.3"
+  },
+  "homepage": "https://github.com/atom-ide-community/atom-ide-hyperclick#readme",
+  "main": "./lib/main.js",
+  "name": "atom-ide-hyperclick",
+  "package-deps": [],
+  "providedServices": {
+    "hyperclick.observeTextEditor": {
+      "versions": {
+        "0.0.0": "observeTextEditor"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom-ide-community/atom-ide-hyperclick.git"
+  },
+  "scripts": {
+    "bump": "ncu -u",
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "lintfix": "eslint . --fix",
+    "test": "atom --test spec"
+  },
+  "version": "1.0.9"
+}

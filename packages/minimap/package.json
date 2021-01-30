@@ -1,0 +1,145 @@
+{
+  "_from": "https://www.atom.io/api/packages/minimap/versions/4.39.5/tarball",
+  "_id": "minimap@4.39.5",
+  "_inBundle": false,
+  "_integrity": "sha512-0yNVlZjHdy8c9sQkzJUYp8I8i24zSUyRmAYphwgpws5hJjMFpny9M2JeBpW7jWjozZadMSwnkUnUU+qmol8bIA==",
+  "_location": "/minimap",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/minimap/versions/4.39.5/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/minimap/versions/4.39.5/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/minimap/versions/4.39.5/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/minimap/versions/4.39.5/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/minimap/versions/4.39.5/tarball",
+  "_shasum": "97e858fc93d575ad58311b19853d73742f2609e1",
+  "_spec": "https://www.atom.io/api/packages/minimap/versions/4.39.5/tarball",
+  "_where": "/private/var/folders/rn/wcqtg18j4zj___ml5tl4zd0c0000gp/T/apm-install-dir-2021030-1395-dae8i8.30tma",
+  "activationHooks": [
+    "core:loaded-shell-environment"
+  ],
+  "author": {
+    "name": "Fangdun Cai",
+    "email": "cfddream@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/atom-minimap/minimap/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Fangdun Cai",
+      "email": "cfddream@gmail.com"
+    },
+    {
+      "name": "Cédric Néhémie",
+      "email": "cedric.nehemie@gmail.com"
+    },
+    {
+      "name": "Amin Yahyaabadi",
+      "email": "aminyahyaabadi74@gmail.com"
+    }
+  ],
+  "dependencies": {
+    "atom-utils-plus": "^0.11.0",
+    "delegato": "^1.0.0",
+    "element-resize-detector": "^1.2.1",
+    "fs-plus": "^3.1.1",
+    "mixto": "^1.0.0"
+  },
+  "deprecated": false,
+  "description": "A preview of the full source code.",
+  "devDependencies": {
+    "@types/atom": "^1.40.5",
+    "@types/jasmine": "3.6.2",
+    "build-commit": "^0.1.1",
+    "cross-env": "^7.0.3",
+    "esdoc": "^1.1.0",
+    "esdoc-es7-plugin": "^0.0.3",
+    "jasmine-expect": "^5.0.0",
+    "npm-check-updates": "latest",
+    "rollup": "2.36.1",
+    "rollup-plugin-atomic": "^2.0.1",
+    "shx": "^0.3.3",
+    "standard": "^16.0.3",
+    "underscore-plus": "^1.7.0"
+  },
+  "engines": {
+    "atom": ">=1.13.0"
+  },
+  "homepage": "https://github.com/atom-minimap/minimap#readme",
+  "keywords": [
+    "minimap",
+    "overview"
+  ],
+  "license": "MIT",
+  "main": "./dist/main.js",
+  "name": "minimap",
+  "providedServices": {
+    "minimap": {
+      "description": "Exposes the minimap API to other packages",
+      "versions": {
+        "1.0.0": "provideMinimapServiceV1"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom-minimap/minimap.git"
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=production cross-env BABEL_KEEP_MODULES=true rollup -c",
+    "build-commit": "npm run clean && build-commit -o dist",
+    "build.readable": "cross-env NODE_ENV=production READABLE_BUILD=true BABEL_KEEP_MODULES=true rollup -c",
+    "build.test": "cross-env NODE_ENV=test BABEL_KEEP_MODULES=true rollup -c",
+    "bump": "ncu -u",
+    "clean": "shx rm -rf dist .parcel-cache",
+    "dev": "cross-env NODE_ENV=development BABEL_KEEP_MODULES=true rollup -c -w",
+    "esdoc": "esdoc -c esdoc.json",
+    "lint": "standard --fix lib/**/*.js spec/**/*.js",
+    "prepare": "npm run build",
+    "test": "atom --test spec",
+    "test:lint": "standard lib/**/*.js spec/**/*.js"
+  },
+  "standard": {
+    "globals": [
+      "advanceClock",
+      "atom",
+      "beforeEach",
+      "afterEach",
+      "expect",
+      "describe",
+      "fdescribe",
+      "ffdescribe",
+      "fffdescribe",
+      "xdescribe",
+      "it",
+      "xit",
+      "fit",
+      "ffit",
+      "fffit",
+      "jasmine",
+      "MouseEvent",
+      "runs",
+      "spyOn",
+      "waits",
+      "waitsFor",
+      "waitsForPromise",
+      "devicePixelRatio",
+      "requestAnimationFrame",
+      "Event",
+      "MouseEvent",
+      "IntersectionObserver",
+      "cancelAnimationFrame"
+    ]
+  },
+  "version": "4.39.5",
+  "viewProviders": [
+    "minimapViewProvider"
+  ]
+}
